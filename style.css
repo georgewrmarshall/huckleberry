@@ -1,12 +1,107 @@
+:root {
+  --main-bg-color: brown;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+  --type-size-info: 1rem;
+  --type-size-body: 1.25rem;
+  --type-size-title: 1.5rem;
+  --type-size-display: 2rem;
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary: hsl(45deg, 100%, 50%);
+  --color-secondary-40: hsl(45deg, 100%, 40%);
+  --color-gray-0: hsl(0deg, 0%, 0%);
+  --color-gray-10: hsl(0deg, 0%, 10%);
+  --color-gray-30: hsl(0deg, 0%, 30%);
+  --color-gray-40: hsl(0deg, 0%, 40%);
+  --color-gray-60: hsl(0deg, 0%, 60%);
+  --color-gray-100: hsl(0deg, 0%, 100%);
+}
+
+body {
+  --body-color: var(--color-gray-10);
+  --body-font-size: var(--type-size-body);
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  color: var(--body-color);
+}
+
+p {
+  margin: 0;
+  margin-bottom: var(--space-2);
+}
+
+header {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-4);
 }
 
 /* Add styles here! */
+.max-width-wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+  max-width: 440px;
+}
+
+.title {
+  font-size: var(--type-size-display);
+  margin-bottom: var(--space-3);
+}
+
+.intro-chunk p {
+  font-size: var(--type-size-title);
+}
+
+.intro-chunk strong {
+  color: var(--color-primary);
+}
+
+main {
+  background-color: var(--color-gray-60);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+main section {
+  background-color: var(--color-gray-100);
+}
+
+.card {
+  border-bottom: var(--space-1) solid var(--color-gray-30);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.card p {
+  font-size: var(--type-size-body);
+}
+
+.indented-heading {
+  font-size: var(--type-size-title);
+  background-color: var(--color-secondary);
+  border-bottom: var(--space-1) solid var(--color-secondary-40);
+  padding: var(--space-3) var(--space-4);
+  margin-left: calc(var(--space-4) * -1);
+  margin-top: var(--space-1);
+  display: inline-block;
+}
