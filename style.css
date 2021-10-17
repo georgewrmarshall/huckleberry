@@ -49,6 +49,7 @@ h2 {
 p {
   margin: 0;
   margin-bottom: var(--space-2);
+  line-height: 1.5;
 }
 
 header {
@@ -95,8 +96,7 @@ main section {
 
 .card {
   border-bottom: var(--space-1) solid var(--color-gray-40);
-  padding-left: var(--space-3);
-  padding-right: var(--space-3);
+  padding: var(--space-1) var(--space-3);
 }
 
 .card p {
@@ -109,6 +109,5 @@ main section {
   border-bottom: var(--space-1) solid var(--color-secondary-40);
   padding: var(--space-3) var(--space-4);
   margin-left: calc(var(--space-4) * -1);
-  margin-top: var(--space-1);
-  display: inline-block;
+  width: fit-content;
 }
