@@ -40,6 +40,12 @@ body {
   color: var(--body-color);
 }
 
+h1,
+h2 {
+  margin: 0;
+  margin-bottom: var(--space-3);
+}
+
 p {
   margin: 0;
   margin-bottom: var(--space-2);
@@ -48,6 +54,7 @@ p {
 header {
   padding-top: var(--space-8);
   padding-bottom: var(--space-4);
+  border-bottom: var(--space-1) solid var(--color-gray-40);
 }
 
 /* Add styles here! */
@@ -63,7 +70,7 @@ header {
   max-width: 440px;
 }
 
-.title {
+.intro .title {
   font-size: var(--type-size-display);
   margin-bottom: var(--space-3);
 }
@@ -87,7 +94,7 @@ main section {
 }
 
 .card {
-  border-bottom: var(--space-1) solid var(--color-gray-30);
+  border-bottom: var(--space-1) solid var(--color-gray-40);
   padding-left: var(--space-3);
   padding-right: var(--space-3);
 }
